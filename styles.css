@@ -1,0 +1,579 @@
+
+/* Base */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #FFFFFF;
+    color: #172033;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+
+/* Main Page */
+
+.maintenance-page {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 55px 25px 35px;
+}
+
+.maintenance-container {
+    width: 100%;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+
+/* Logo */
+
+.logo-wrapper {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 85px;
+}
+
+.company-logo {
+    display: block;
+
+    width: auto;
+    max-width: 430px;
+    max-height: 115px;
+    height: auto;
+
+    object-fit: contain;
+}
+
+
+/* Main Content */
+
+.maintenance-content {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Title */
+
+h1 {
+    width: 100%;
+    max-width: 900px;
+
+    margin: 0 auto 18px;
+    padding: 0 15px;
+
+    color: #172033;
+
+    font-size: clamp(28px, 3.2vw, 43px);
+    line-height: 1.25;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+}
+
+
+/* Animated SVG */
+
+.maintenance-animation {
+    width: 115px;
+    height: 80px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 10px auto 20px;
+}
+
+.maintenance-animation svg {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+/* Maintenance Message */
+
+.maintenance-text {
+    width: 100%;
+    max-width: 760px;
+
+    margin: 0 auto;
+    padding: 0 15px;
+
+    color: #7A8495;
+
+    font-size: clamp(16px, 1.5vw, 19px);
+    line-height: 1.65;
+    font-weight: 400;
+}
+
+
+/* PDF Downloads */
+
+.documents {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 15px;
+
+    margin-top: 32px;
+}
+
+.document-button {
+    min-height: 48px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 9px;
+
+    padding: 12px 23px;
+
+    border: 1.5px solid #00A9E0;
+    border-radius: 7px;
+
+    background: #FFFFFF;
+    color: #00A9E0;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 500;
+
+    transition:
+        background-color 0.25s ease,
+        color 0.25s ease,
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.document-button:hover {
+    background: #00A9E0;
+    color: #FFFFFF;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 7px 20px rgba(0, 169, 224, 0.18);
+}
+
+.document-icon {
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 600;
+}
+
+
+/* Contact */
+
+.contact-section {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 28px;
+}
+
+.phone-numbers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 10px 28px;
+}
+
+.phone-numbers a {
+    color: #172033;
+
+    text-decoration: none;
+
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: 500;
+
+    transition: color 0.2s ease;
+}
+
+.phone-numbers a:hover {
+    color: #00A9E0;
+}
+
+.phone-numbers span {
+    color: #00A9E0;
+    font-weight: 500;
+}
+
+
+/* Email */
+
+.email {
+    display: inline-block;
+
+    margin-top: 8px;
+
+    color: #172033;
+
+    text-decoration: none;
+
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+
+    transition: color 0.2s ease;
+}
+
+.email:hover {
+    color: #00A9E0;
+}
+
+
+/* Social Media */
+
+.social-section {
+    margin-top: 50px;
+}
+
+.social-section p {
+    margin: 0 0 15px;
+
+    color: #172033;
+
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 12px;
+}
+
+.social-links a {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    background: #00A9E0;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background-color 0.25s ease;
+}
+
+.social-links a:hover {
+    background: #008FBE;
+    transform: translateY(-3px);
+
+    box-shadow: 0 7px 18px rgba(0, 169, 224, 0.22);
+}
+
+.social-links svg {
+    width: 20px;
+    height: 20px;
+    fill: #FFFFFF;
+}
+
+
+/* Footer */
+
+.footer {
+    width: 100%;
+
+    margin-top: 70px;
+    padding-top: 25px;
+
+    border-top: 1px solid #E7EBF0;
+}
+
+.factory-address {
+    max-width: 700px;
+
+    margin: 0 auto;
+    padding: 0 15px;
+
+    color: #6F7888;
+
+    font-size: 13px;
+    line-height: 1.65;
+    font-weight: 400;
+}
+
+.factory-address strong {
+    color: #172033;
+    font-weight: 500;
+}
+
+.copyright {
+    margin: 10px 0 0;
+
+    color: #9AA2AF;
+
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+
+/* Tablet */
+
+@media (max-width: 768px) {
+
+    .maintenance-page {
+        align-items: flex-start;
+        padding: 45px 20px 30px;
+    }
+
+    .logo-wrapper {
+        margin-bottom: 60px;
+    }
+
+    .company-logo {
+        max-width: 360px;
+        max-height: 100px;
+    }
+
+    h1 {
+        font-size: clamp(26px, 5vw, 36px);
+        line-height: 1.3;
+    }
+
+    .maintenance-animation {
+        width: 105px;
+        height: 75px;
+    }
+
+    .maintenance-text {
+        font-size: 17px;
+    }
+
+    .social-section {
+        margin-top: 45px;
+    }
+
+    .footer {
+        margin-top: 55px;
+    }
+}
+
+
+/* Mobile */
+
+@media (max-width: 520px) {
+
+    .maintenance-page {
+        padding: 30px 16px 25px;
+    }
+
+    .logo-wrapper {
+        margin-bottom: 42px;
+    }
+
+    .company-logo {
+        max-width: 280px;
+        max-height: 82px;
+    }
+
+    h1 {
+        max-width: 430px;
+
+        margin-bottom: 12px;
+        padding: 0 5px;
+
+        font-size: 27px;
+        line-height: 1.3;
+    }
+
+    .maintenance-animation {
+        width: 95px;
+        height: 68px;
+
+        margin-top: 8px;
+        margin-bottom: 16px;
+    }
+
+    .maintenance-text {
+        max-width: 420px;
+
+        padding: 0 4px;
+
+        font-size: 15px;
+        line-height: 1.65;
+    }
+
+    .documents {
+        flex-direction: column;
+        gap: 11px;
+
+        margin-top: 25px;
+    }
+
+    .document-button {
+        width: min(100%, 320px);
+        min-height: 48px;
+
+        padding: 12px 16px;
+
+        font-size: 14px;
+    }
+
+    .contact-section {
+        margin-top: 25px;
+    }
+
+    .phone-numbers {
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .phone-numbers a {
+        font-size: 14px;
+    }
+
+    .email {
+        margin-top: 9px;
+        font-size: 15px;
+        overflow-wrap: anywhere;
+    }
+
+    .social-section {
+        margin-top: 38px;
+    }
+
+    .social-section p {
+        font-size: 15px;
+        margin-bottom: 13px;
+    }
+
+    .social-links {
+        gap: 10px;
+    }
+
+    .social-links a {
+        width: 40px;
+        height: 40px;
+    }
+
+    .social-links svg {
+        width: 19px;
+        height: 19px;
+    }
+
+    .footer {
+        margin-top: 45px;
+        padding-top: 20px;
+    }
+
+    .factory-address {
+        padding: 0 5px;
+        font-size: 12px;
+        line-height: 1.65;
+    }
+
+    .copyright {
+        font-size: 11px;
+        margin-top: 8px;
+    }
+}
+
+
+/* Small Mobile */
+
+@media (max-width: 360px) {
+
+    .maintenance-page {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .company-logo {
+        max-width: 245px;
+        max-height: 72px;
+    }
+
+    .logo-wrapper {
+        margin-bottom: 35px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .maintenance-text {
+        font-size: 14px;
+    }
+
+    .document-button {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .phone-numbers a {
+        font-size: 13px;
+    }
+}
+
+
+/* Accessibility */
+
+a:focus-visible {
+    outline: 3px solid rgba(0, 169, 224, 0.35);
+    outline-offset: 4px;
+}
+
+
+/* Reduced Motion */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .maintenance-animation animateTransform {
+        display: none;
+    }
+
+    .document-button,
+    .social-links a,
+    .phone-numbers a,
+    .email {
+        transition: none;
+    }
+}
